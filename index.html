@@ -181,7 +181,7 @@
     <div class="error-content">
       <h1>We're sorry...</h1>
       <p>Some error occurred. Your request could not be processed!</p>
-      <a href="https://scholarship.up.gov.in/index.aspx" class="home-button">Return to Homepage</a>
+      <a class="home-button" onclick="redirectToHome(event)">Return to Homepage</a>
     </div>
     <marquee behavior="scroll" direction="right" scrollamount="30"
       style="font-size: 1.2rem; color: var(--primary-color);">
@@ -217,8 +217,6 @@
         verified by and supplemented with documents issued by the concerned authorities. NIC will not be responsible for
         any decision or claim based on the displayed data.</p>
     </div>
-    <!-- https://scholarship.up.gov.in/imagesnew/digital-india.png -->
-
   </footer>
 
 
@@ -251,6 +249,16 @@
         style="width: 50px; height: 50px;">
     </marquee>
   </div>
+  <script>
+    function redirectToHome(event) {
+      event.preventDefault();
+      // window.location.href = "https://scholarship.up.gov.in/index.aspx";
+      window.location.href = "https://rohit-ayadav.github.io/UPS/";
+      setTimeout(() => {
+        window.location.href = "https://rohit-ayadav.github.io/UPS/";
+      }, 3000);
+    }
+  </script>
 </body>
 
 </html>
