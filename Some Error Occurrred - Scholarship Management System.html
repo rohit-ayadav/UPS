@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UP Scholarship - Error Page</title>
+  <style>
+    :root {
+      --primary-color: #9a1919;
+      --text-color: #333;
+      --bg-color: #fff;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: var(--text-color);
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      padding: 8px;
+      background: var(--primary-color);
+      color: white;
+      transition: top 0.3s;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    .top-bar {
+      background: #f5f5f5;
+      padding: 8px 0;
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header {
+      padding: 20px 0;
+      background: linear-gradient(to right, #fff, #f5f5f5);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 115px;
+      height: 115px;
+    }
+
+    .title {
+      flex-grow: 1;
+    }
+
+    .title h1 {
+      color: var(--primary-color);
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .title h2 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+    }
+
+    .error-container {
+      text-align: center;
+      padding: 80px 20px;
+      background: #f9fee8;
+      min-height: 400px;
+    }
+
+    .error-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .error-content h1 {
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .help-line {
+      background: #f5f5f5;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .footer {
+      background: var(--primary-color);
+      color: white;
+      padding: 30px 0;
+      margin-top: 30px;
+    }
+
+    .home-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .home-button:hover {
+      background-color: #7a1414;
+    }
+
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .title h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <div class="top-bar">
+    <div class="container">
+      <nav aria-label="Utility navigation">
+        <a href="/login">Login</a> |
+        <a href="/register">Registration</a> |
+        <a href="/sitemap">Site Map</a> |
+        <a href="/color">Color</a> |
+        <a href="/screen-reader">Screen Reader</a> |
+        <a href="/hi">हिन्दी</a>
+      </nav>
+    </div>
+    </nav>
+  </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <img src="https://scholarship.up.gov.in/imagesnew/l.jpg" alt="UP Scholarship Logo" class="logo">
+        <div class="title">
+          <h1>छात्रवृत्ति एवं शुल्क प्रतिपूर्ति ऑनलाइन प्रणाली</h1>
+          <h2>उत्तर प्रदेश</h2>
+          <marquee behavior="scroll" direction="left" scrollamount="30"
+            style="font-size: 1.2rem; color: var(--primary-color);">छात्रवृत्ति एवं शुल्क प्रतिपूर्ति ऑनलाइन प्रणाली
+          </marquee>
+          <p>Scholarship and Fee Reimbursement Online System</p>
+          <img src="https://scholarship.up.gov.in/imagesnew/SW.png" alt="Swachh Bharat Abhiyan Logo"
+            style="width: 50px; height: 50px;">
+          <img src="https://scholarship.up.gov.in/imagesnew/DI.png" alt="Digital India Logo"
+            style="width: 50px; height: 50px;">
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="error-container">
+    <div class="error-content">
+      <h1>We're sorry...</h1>
+      <p>Some error occurred. Your request could not be processed!</p>
+      <a href="https://scholarship.up.gov.in/index.aspx" class="home-button">Return to Homepage</a>
+    </div>
+    <marquee behavior="scroll" direction="right" scrollamount="30"
+      style="font-size: 1.2rem; color: var(--primary-color);">
+      Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry
+      Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry
+      Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry
+      Sorry Sorry
+    </marquee>
+    <marquee behavior="scroll" direction="left" scrollamount="30"
+      style="font-size: 1.2rem; color: var(--primary-color);">
+      Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry
+      Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry
+      Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry Sorry
+      Sorry Sorry
+    </marquee>
+  </main>
+
+  <div class="help-line">
+    <marquee behavior="scroll" direction="left" scrollamount="30"
+      style="font-size: 1.2rem; color: var(--primary-color);">Help Line Toll-Free Numbers:
+      Backward Class Welfare: 18001805131
+      Minority Welfare: 18001805229
+      Social Welfare: 18004190001
+    </marquee>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>This website is designed, developed & hosted by National Informatics Centre, UP State Unit Lucknow. Best viewed
+        in Firefox 25+, Internet Explorer 11, and Chrome 34+ at 1024×768 resolution.</p>
+      <p>Disclaimer: Every effort has been made to ensure accuracy of data on this website. However, these need to be
+        verified by and supplemented with documents issued by the concerned authorities. NIC will not be responsible for
+        any decision or claim based on the displayed data.</p>
+    </div>
+    <!-- https://scholarship.up.gov.in/imagesnew/digital-india.png -->
+
+  </footer>
+
+
+
+  <div style="background: black; display: flex; justify-content: center; padding: 20px;">
+    <marquee behavior="scroll" direction="right" scrollamount="15"
+      style="font-size: 1.2rem; color: var(--primary-color);">
+
+      <img src="https://scholarship.up.gov.in/imagesnew/digital-india.png" alt="Digital India Logo"
+        style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/datagov.png" alt="Data Gov Logo"
+        style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/e-greating.png" alt="E-Greeting Logo"
+        style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/sb1.jpg" alt="Swachh Bharat Logo"
+        style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/india2.png" alt="India Logo" style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/india-gov-logo.png" alt="India Gov Logo"
+        style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/digital-india.png" alt="Digital India Logo"
+        style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/datagov.png" alt="Data Gov Logo"
+        style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/e-greating.png" alt="E-Greeting Logo"
+        style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/sb1.jpg" alt="Swachh Bharat Logo"
+        style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/india2.png" alt="India Logo" style="width: 50px; height: 50px;">
+      <img src="https://scholarship.up.gov.in/imagesnew/india-gov-logo.png" alt="India Gov Logo"
+        style="width: 50px; height: 50px;">
+    </marquee>
+  </div>
+</body>
+
+</html>
